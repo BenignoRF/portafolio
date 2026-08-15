@@ -1413,3 +1413,76 @@ body {
     font-size: 24px;
   }
 }
+
+
+/* Hero illustration layout */
+#hero .hero-layout {
+  min-height: 70vh;
+}
+
+#hero .hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+#hero .hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-illustration-frame {
+  position: relative;
+  width: min(440px, 100%);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-illustration-frame::before {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(5, 99, 187, 0.08), rgba(5, 99, 187, 0.02));
+}
+
+.hero-illustration {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  filter: drop-shadow(0 22px 34px rgba(34, 51, 84, 0.12));
+}
+
+@media (max-width: 991px) {
+  #hero .hero-layout {
+    min-height: auto;
+    padding: 92px 0 48px;
+    text-align: center;
+  }
+
+  #hero .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  #hero .hero-visual {
+    margin-top: 36px;
+  }
+
+  .hero-illustration-frame {
+    width: min(320px, 86vw);
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-visual {
+    display: none;
+  }
+}
