@@ -1207,3 +1207,209 @@ body {
   #footer .credits {
     font-size: 13px;
   }
+
+/* Professional portfolio refinements */
+#hero .hero-kicker {
+  margin: 12px 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0563bb;
+}
+
+#hero .hero-subtitle {
+  max-width: 700px;
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-actions a,
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.hero-actions .btn-primary,
+.cta-button {
+  background: #0563bb;
+  color: #fff;
+}
+
+.hero-actions .btn-primary:hover,
+.cta-button:hover {
+  background: #0678e3;
+  color: #fff;
+}
+
+.hero-actions .btn-secondary {
+  border: 1px solid #0563bb;
+  color: #0563bb;
+  background: #fff;
+}
+
+.hero-actions .btn-secondary:hover {
+  background: #eef7ff;
+  color: #0563bb;
+}
+
+.technologies .technology-group {
+  height: 100%;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e7eef5;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(34, 51, 84, 0.06);
+}
+
+.technologies .technology-group h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #45505b;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 11px;
+  border-radius: 6px;
+  background: #eef7ff;
+  color: #0563bb;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.services .professional-service {
+  width: 100%;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e7eef5;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(34, 51, 84, 0.06);
+  transition: 0.3s;
+}
+
+.services .professional-service:hover {
+  transform: translateY(-6px);
+  border-color: #b8dcff;
+  box-shadow: 0 14px 34px rgba(34, 51, 84, 0.12);
+}
+
+.services .professional-service i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #eef7ff;
+  color: #0563bb;
+  font-size: 26px;
+}
+
+.services .professional-service h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #45505b;
+}
+
+.services .professional-service p {
+  margin: 0;
+  color: #728394;
+  line-height: 1.6;
+}
+
+.cta-section {
+  padding: 64px 0;
+  background: #0563bb;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #fff;
+}
+
+.cta-content h2 {
+  margin: 0 0 8px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  margin: 0;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.cta-section .cta-button {
+  flex: 0 0 auto;
+  background: #fff;
+  color: #0563bb;
+}
+
+.cta-section .cta-button:hover {
+  background: #eef7ff;
+  color: #0563bb;
+}
+
+#footer p a {
+  color: #45505b;
+}
+
+#footer .social-links .github {
+  background: #24292f;
+}
+
+#footer .social-links .whatsapp {
+  background: #25d366;
+}
+
+@media (max-width: 768px) {
+  #hero .hero-kicker {
+    font-size: 20px;
+  }
+
+  #hero .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-actions a,
+  .cta-button {
+    width: 100%;
+  }
+
+  .cta-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cta-content h2 {
+    font-size: 24px;
+  }
+}
