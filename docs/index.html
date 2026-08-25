@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href='static/images/rocketman.gif' rel="icon">
-    <link href='static/images/rocketman.gif' rel="apple-touch-icon">
+    <link href='static/images/brand-favicon.png' rel="icon" type="image/png">
+    <link href='static/images/brand-favicon.png' rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -44,6 +44,9 @@
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center">
+        <a href="#hero" class="sidebar-brand scrollto" aria-label="Benigno Ranilla">
+            <img src="static/images/brand-logo.png" alt="">
+        </a>
 
         <nav id="navbar" class="navbar nav-menu">
             <ul>
@@ -72,17 +75,62 @@
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <div class="row align-items-center hero-layout">
                 <div class="col-lg-6 hero-copy">
-                    <h1>Benigno Ranilla</h1>
+                    <div class="brand-lockup" aria-label="Benigno Ranilla, arquitecto de aplicaciones">
+                        <div class="brand-mark" aria-hidden="true"><img src="static/images/brand-logo.png" alt=""></div>
+                        <div class="brand-divider" aria-hidden="true"></div>
+                        <div class="brand-text">
+                            <strong>Benigno Ranilla</strong>
+                            <span>Arquitecto de aplicaciones</span>
+                        </div>
+                    </div>
                     <p class="hero-kicker">Desarrollo web, apps m&oacute;viles y soluciones digitales</p>
                     <p class="hero-subtitle">Construyo productos digitales claros, r&aacute;pidos y pensados para negocios que necesitan crecer, automatizar procesos o lanzar nuevas ideas.</p>
                     <div class="hero-actions">
                         <a href="#portfolio" class="btn-primary scrollto">Ver proyectos</a>
                         <a href="https://wa.me/51914751129" target="_blank" rel="noopener" class="btn-secondary">Contactar</a>
                     </div>
+                    <div class="hero-trust-strip" aria-label="Beneficios principales">
+                        <span><i class="bx bx-check-shield"></i> Soluciones seguras</span>
+                        <span><i class="bx bx-code-curly"></i> C&oacute;digo limpio</span>
+                        <span><i class="bx bx-trending-up"></i> Tecnolog&iacute;a de vanguardia</span>
+                        <span><i class="bx bx-user-check"></i> Compromiso con tu &eacute;xito</span>
+                    </div>
                 </div>
                 <div class="col-lg-6 hero-visual" aria-hidden="true">
-                    <div class="hero-illustration-frame">
-                        <img src='static/images/hero-developer.png' alt="Ilustraci&oacute;n de desarrollador programando" class="hero-illustration">
+                    <div class="hero-laptop-preview">
+                        <div class="hero-laptop-screen">
+                            <div class="hero-code-panel">
+                                <i class="bx bx-code-alt"></i>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="hero-dashboard-panel">
+                                <div class="hero-metrics">
+                                    <div><small>Proyectos</small><strong>24</strong></div>
+                                    <div><small>Clientes</small><strong>18</strong></div>
+                                    <div><small>Satisfacci&oacute;n</small><strong>98%</strong></div>
+                                </div>
+                                <div class="hero-chart-card">
+                                    <small>Rendimiento</small>
+                                    <svg viewBox="0 0 260 92" role="img" aria-label="Linea de rendimiento ascendente">
+                                        <polyline points="8,72 48,55 83,63 126,42 164,51 204,27 252,14" fill="none" stroke="#0563bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <polyline points="8,72 48,55 83,63 126,42 164,51 204,27 252,14" fill="none" stroke="#d49a64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+                                    </svg>
+                                </div>
+                                <div class="hero-tech-row">
+                                    <span>JS</span>
+                                    <span>React</span>
+                                    <span>Node</span>
+                                    <span>Python</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,52 +140,39 @@
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="facts">
-            <div class="container facts" data-aos="fade-up">
-
+        <section id="about" class="about-overview">
+            <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Sobre m&iacute;</h2>
-                    <p>Ingeniero de Sistemas, con experiencia en gesti&oacute;n de proyectos,
-                        desarrollo de aplicaciones m&oacute;viles, aplicaciones web, automatizaciones y bots. Trabajo con
-                        metodolog&iacute;as &aacute;giles y foco en soluciones simples de mantener.</p>
+                    <span class="section-eyebrow">Sobre mi</span>
+                    <h2>Arquitectura, desarrollo y productos digitales sostenibles</h2>
+                    <p>Ingeniero de Sistemas, con experiencia en gesti&oacute;n de proyectos, desarrollo de aplicaciones m&oacute;viles, aplicaciones web, automatizaciones y bots. Trabajo con metodolog&iacute;as &aacute;giles y foco en soluciones simples de mantener.</p>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src='static/images/rocketman.gif' width="400">
+                <div class="row gy-4 about-overview-grid">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">UX</span>
+                            <h3>Dise&ntilde;o UI/UX</h3>
+                            <p>Interfaces claras, ordenadas y pensadas para que usuarios reales puedan avanzar sin fricci&oacute;n.</p>
+                        </article>
                     </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content">
-                        <h3>Dise&ntilde;o UI/UX, desarrollo web y desarrollo m&oacute;vil.</h3>
-                        <p class="fst-italic">
-                            He trabajado con distintas herramientas de desarrollo y dise&ntilde;o para aplicaciones web
-                            y m&oacute;vil:
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Android Studio</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>XCode</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Visual Studio</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Visual Studio Code</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Spring Boot</strong> </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>WooCommerce</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Figma</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Adobe XD</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>InDesign</strong> </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>WordPress</strong> </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">WEB</span>
+                            <h3>Desarrollo web</h3>
+                            <p>Sitios administrables, r&aacute;pidos y alineados a objetivos de venta, captaci&oacute;n o comunicaci&oacute;n.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">APP</span>
+                            <h3>Desarrollo movil</h3>
+                            <p>Aplicaciones h&iacute;bridas y nativas conectadas a APIs, paneles y procesos de negocio.</p>
+                        </article>
                     </div>
                 </div>
-
             </div>
-        </section>
-            <!-- </section>End About Section -->
+        </section>            <!-- </section>End About Section -->
             <!-- ======= Technologies Section ======= -->
             <section id="technologies" class="technologies section-bg">
                 <div class="container" data-aos="fade-up">

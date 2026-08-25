@@ -19,5 +19,5 @@ from django.urls import path
 from benignoWeb.views import home
 
 urlpatterns = [
-    path('', home),
+    path('', home, name='home'),
 ]

@@ -1,0 +1,809 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Benigno Ranilla</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href='{% static "images/brand-favicon.png"%}' rel="icon" type="image/png">
+    <link href='{% static "images/brand-favicon.png"%}' rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href='{% static "vendor/aos/aos.css"%}' rel="stylesheet">
+    <link href='{% static "vendor/bootstrap/css/bootstrap.min.css"%}' rel="stylesheet">
+    <link href='{% static "vendor/bootstrap-icons/bootstrap-icons.css"%}' rel="stylesheet">
+    <link href='{% static "vendor/boxicons/css/boxicons.min.css"%}' rel="stylesheet">
+    <link href='{% static "vendor/glightbox/css/glightbox.min.css"%}' rel="stylesheet">
+    <link href='{% static "vendor/swiper/swiper-bundle.min.css"%}' rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href='{% static "css/style.css" %}' rel="stylesheet">
+
+    <!-- =======================================================
+  * Updated: Oct 16 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BenignoRanilla
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+        <a href="#hero" class="sidebar-brand scrollto" aria-label="Benigno Ranilla">
+            <img src='{% static "images/brand-logo.png"%}' alt="">
+        </a>
+
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a>
+                </li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre m&iacute;</span></a></li>
+                <!-- <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+                        <span>Resumen</span></a></li> -->
+                <li><a href="#technologies" class="nav-link scrollto"><i class="bx bx-code-alt"></i>
+                        <span>Tecnolog&iacute;as</span></a></li>
+                <li><a href="#cv" class="nav-link scrollto"><i class="bx bx-file"></i>
+                        <span>CV</span></a></li>
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                        <span>Portafolio</span></a></li>
+                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                        <span>Servicios</span></a></li>
+                <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                        <span>Contacto</span></a></li> -->
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row align-items-center hero-layout">
+                <div class="col-lg-6 hero-copy">
+                    <div class="brand-lockup" aria-label="Benigno Ranilla, arquitecto de aplicaciones">
+                        <div class="brand-mark" aria-hidden="true"><img src='{% static "images/brand-logo.png"%}' alt=""></div>
+                        <div class="brand-divider" aria-hidden="true"></div>
+                        <div class="brand-text">
+                            <strong>Benigno Ranilla</strong>
+                            <span>Arquitecto de aplicaciones</span>
+                        </div>
+                    </div>
+                    <p class="hero-kicker">Desarrollo web, apps m&oacute;viles y soluciones digitales</p>
+                    <p class="hero-subtitle">Construyo productos digitales claros, r&aacute;pidos y pensados para negocios que necesitan crecer, automatizar procesos o lanzar nuevas ideas.</p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn-primary scrollto">Ver proyectos</a>
+                        <a href="https://wa.me/51914751129" target="_blank" rel="noopener" class="btn-secondary">Contactar</a>
+                    </div>
+                    <div class="hero-trust-strip" aria-label="Beneficios principales">
+                        <span><i class="bx bx-check-shield"></i> Soluciones seguras</span>
+                        <span><i class="bx bx-code-curly"></i> C&oacute;digo limpio</span>
+                        <span><i class="bx bx-trending-up"></i> Tecnolog&iacute;a de vanguardia</span>
+                        <span><i class="bx bx-user-check"></i> Compromiso con tu &eacute;xito</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual" aria-hidden="true">
+                    <div class="hero-laptop-preview">
+                        <div class="hero-laptop-screen">
+                            <div class="hero-code-panel">
+                                <i class="bx bx-code-alt"></i>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="hero-dashboard-panel">
+                                <div class="hero-metrics">
+                                    <div><small>Proyectos</small><strong>24</strong></div>
+                                    <div><small>Clientes</small><strong>18</strong></div>
+                                    <div><small>Satisfacci&oacute;n</small><strong>98%</strong></div>
+                                </div>
+                                <div class="hero-chart-card">
+                                    <small>Rendimiento</small>
+                                    <svg viewBox="0 0 260 92" role="img" aria-label="Linea de rendimiento ascendente">
+                                        <polyline points="8,72 48,55 83,63 126,42 164,51 204,27 252,14" fill="none" stroke="#0563bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <polyline points="8,72 48,55 83,63 126,42 164,51 204,27 252,14" fill="none" stroke="#d49a64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+                                    </svg>
+                                </div>
+                                <div class="hero-tech-row">
+                                    <span>JS</span>
+                                    <span>React</span>
+                                    <span>Node</span>
+                                    <span>Python</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-overview">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <span class="section-eyebrow">Sobre mi</span>
+                    <h2>Arquitectura, desarrollo y productos digitales sostenibles</h2>
+                    <p>Bachiller en Ingenieria de Sistemas, con experiencia en gestion de proyectos, desarrollo de aplicaciones moviles, aplicaciones web, automatizaciones y bots.</p>
+                </div>
+
+                <div class="row gy-4 about-overview-grid">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">UX</span>
+                            <h3>Dise&ntilde;o UI/UX</h3>
+                            <p>Interfaces claras, ordenadas y pensadas para que usuarios reales puedan avanzar sin fricci&oacute;n.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">WEB</span>
+                            <h3>Desarrollo web</h3>
+                            <p>Sitios administrables, r&aacute;pidos y alineados a objetivos de venta, captaci&oacute;n o comunicaci&oacute;n.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="about-overview-card">
+                            <span class="about-card-badge">APP</span>
+                            <h3>Desarrollo movil</h3>
+                            <p>Aplicaciones h&iacute;bridas y nativas conectadas a APIs, paneles y procesos de negocio.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>            <!-- </section>End About Section -->
+            <!-- ======= Technologies Section ======= -->
+            <section id="technologies" class="technologies section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Tecnolog&iacute;as</h2>
+                        <p>Herramientas y stacks que uso para construir interfaces, APIs, aplicaciones m&oacute;viles e integraciones para negocios.</p>
+                    </div>
+
+                    <div class="row gy-4 technology-groups">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="technology-group">
+                                <h3>Frontend</h3>
+                                <div class="tech-badges">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>TypeScript</span>
+                                    <span>Angular</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="technology-group">
+                                <h3>Backend</h3>
+                                <div class="tech-badges">
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>C#</span>
+                                    <span>.NET</span>
+                                    <span>SQL Server</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="technology-group">
+                                <h3>Mobile</h3>
+                                <div class="tech-badges">
+                                    <span>Android</span>
+                                    <span>Kotlin</span>
+                                    <span>Swift</span>
+                                    <span>Flutter</span>
+                                    <span>Xcode</span>
+                                    <span>Android Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="technology-group">
+                                <h3>Cloud &amp; Dise&ntilde;o</h3>
+                                <div class="tech-badges">
+                                    <span>Azure</span>
+                                    <span>AWS</span>
+                                    <span>Figma</span>
+                                    <span>Adobe XD</span>
+                                    <span>WordPress</span>
+                                    <span>WooCommerce</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Technologies Section -->
+
+            <!-- ======= Facts Section ======= -->
+            <section id="about" class="about facts">
+                <div class="container about" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <!-- <h2>Hechos</h2> -->
+                        <p></p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="count-box">
+                                <i class="bi bi-emoji-smile"></i>
+                                <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="1"
+                                    class="purecounter"></span>
+                                <p>Clientes felices</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                            <div class="count-box">
+                                <i class="bi bi-journal-richtext"></i>
+                                <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
+                                    class="purecounter"></span>
+                                <p>Proyectos</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                            <div class="count-box">
+                                <i class="bi bi-headset"></i>
+                                <span data-purecounter-start="0" data-purecounter-end="492"
+                                    data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Horas de soporte</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                            <div class="count-box">
+                                <i class="bi bi-award"></i>
+                                <span data-purecounter-start="0" data-purecounter-end="37000"
+                                    data-purecounter-duration="1" class="purecounter"></span>
+                                <p>L&iacute;neas de c&oacute;digo</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Facts Section -->
+
+            <!-- ======= CV Section ======= -->
+            <section id="cv" class="cv-section">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>CV Profesional</h2>
+                        <p>Resumen optimizado para reclutamiento, postulaciones y revisi&oacute;n r&aacute;pida de experiencia t&eacute;cnica.</p>
+                    </div>
+
+                    <div class="cv-header">
+                        <div>
+                            <span class="cv-label">Arquitecto de Software &amp; L&iacute;der T&eacute;cnico</span>
+                            <h3>Benigno Ranilla Flores</h3>
+                            <p>Ingeniero de Sistemas con experiencia en desarrollo web y m&oacute;vil, arquitectura de software, cloud, integraciones y liderazgo de equipos &aacute;giles.</p>
+                        </div>
+                        <div class="cv-actions">
+                            <a href="https://www.linkedin.com/in/benignoranilla/" target="_blank" rel="noopener" class="cv-download"><i class="bx bxl-linkedin"></i> Ver LinkedIn</a>
+                            <a href="https://wa.me/51914751129" target="_blank" rel="noopener" class="cv-link"><i class="bx bxl-whatsapp"></i> Contactar</a>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4 cv-grid">
+                        <div class="col-lg-4">
+                            <div class="cv-card cv-profile-card">
+                                <h4>Perfil</h4>
+                                <ul class="cv-facts">
+                                    <li><strong>Ubicaci&oacute;n:</strong> Per&uacute;</li>
+                                    <li><strong>Contacto:</strong> +51 914 751 129</li>
+                                    <li><strong>Modalidad:</strong> Remoto, h&iacute;brido o presencial</li>
+                                    <li><strong>Idiomas:</strong> Espa&ntilde;ol, Ingl&eacute;s</li>
+                                </ul>
+                                <h4>Stack principal</h4>
+                                <div class="cv-tags">
+                                    <span>Java</span><span>C#</span><span>Kotlin</span><span>Flutter</span><span>Node.js</span><span>Django</span><span>Angular</span><span>PostgreSQL</span><span>SQL Server</span><span>AWS</span><span>Azure</span><span>Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="cv-card">
+                                <h4>Experiencia reciente</h4>
+                                <div class="cv-timeline">
+                                    <article>
+                                        <span>2026 - Actualidad</span>
+                                        <h5>Grupo AJE - Desarrollador de back-end</h5>
+                                        <p>Desarrollo backend y soporte a soluciones empresariales, con foco en calidad, mantenibilidad e integraci&oacute;n de servicios.</p>
+                                    </article>
+                                    <article>
+                                        <span>2024 - 2026</span>
+                                        <h5>Canvia - Arquitecto de Software / Desarrollador de Aplicaciones</h5>
+                                        <p>Dise&ntilde;o de arquitecturas empresariales, modernizaci&oacute;n tecnol&oacute;gica, migraciones cr&iacute;ticas, apps Flutter con Clean Architecture y APIs Node.js con OAuth/JWT.</p>
+                                    </article>
+                                    <article>
+                                        <span>2024</span>
+                                        <h5>Grupo Verdandi - Desarrollador Front-end</h5>
+                                        <p>Aplicaci&oacute;n m&oacute;vil en Flutter para compras y aprobaciones, integraci&oacute;n Firebase, Hive y autenticaci&oacute;n.</p>
+                                    </article>
+                                    <article>
+                                        <span>2024</span>
+                                        <h5>Doors Technologies - Desarrollador de Aplicaciones</h5>
+                                        <p>Refactorizaci&oacute;n Java Spring Boot, desarrollo Angular, integraci&oacute;n Django/Azure SQL y liderazgo t&eacute;cnico con Scrum.</p>
+                                    </article>
+                                    <article>
+                                        <span>2023 - 2024</span>
+                                        <h5>TecHealth Lab - L&iacute;der T&eacute;cnico</h5>
+                                        <p>Desarrollo m&oacute;vil Kotlin con arquitectura MVI, liderazgo de equipo, revisiones de c&oacute;digo, calidad con SonarQube y pr&aacute;cticas CI/CD.</p>
+                                    </article>
+                                    <article>
+                                        <span>2013 - 2023</span>
+                                        <h5>Experiencia previa</h5>
+                                        <p>SEIDOR, Indigo Smart Solutions, Delaware, BBVA, everis, EY, Stefanini, VIT, Autoridad Nacional del Agua y Microsoft Student Partner.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="cv-card">
+                                <h4>Educaci&oacute;n</h4>
+                                <div class="cv-education">
+                                    <h5>Universidad Nacional San Luis Gonzaga de Ica</h5>
+                                    <p>Ingeniero de Sistemas - Ingenier&iacute;a de Sistemas (2011 - 2016)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="cv-card">
+                                <h4>Certificaciones destacadas</h4>
+                                <div class="cv-certifications">
+                                    <span>AWS Well-Architected Proficient</span>
+                                    <span>AWS Technical Essentials</span>
+                                    <span>Scrum Fundamentals Certified</span>
+                                    <span>IBM API Connect Technical Sales</span>
+                                    <span>Firebase Android Java</span>
+                                    <span>Angular Experto</span>
+                                    <span>Android Kotlin</span>
+                                    <span>Flutter &amp; Dart</span>
+                                    <span>SQL Server</span>
+                                    <span>Adobe XD UX/UI Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End CV Section -->
+
+            <!-- ======= Portfolio Section ======= -->
+            <section id="portfolio" class="portfolio section-bg">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Portafolio</h2>
+                        <p>A lo largo de mi carrera como desarrollador, he trabajado distintos de tipos de aplicaciones con diversos patrones, programas, requerimientos,
+                        dise&ntilde;os y dificultades. Teniendo como resultado los siguientes proyectos:</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">Todo</li>
+                                <li data-filter=".filter-app">M&oacute;vil</li>
+                                <!-- <li data-filter=".filter-card">Card</li> -->
+                                <li data-filter=".filter-web">Web</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/teescucho.png"%}' class="img-fluid" alt="Te Escucho">
+                                <div class="portfolio-info">
+                                    <h4>Te Escucho</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/teescucho.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Te Escucho"><i class="bx bx-plus"></i></a>
+                                        <a href="https://teescucho.pe/" target="_blank" rel="noopener" title="Visitar Te Escucho"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/gabaldoni.png"%}' class="img-fluid" alt="Gabaldoni Garage">
+                                <div class="portfolio-info">
+                                    <h4>Gabaldoni Garage</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/gabaldoni.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Gabaldoni Garage"><i class="bx bx-plus"></i></a>
+                                        <a href="https://gabaldonigarage.com/" target="_blank" rel="noopener" title="Visitar Gabaldoni Garage"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/grupocomunidad.png"%}' class="img-fluid" alt="Grupo Comunidad">
+                                <div class="portfolio-info">
+                                    <h4>Grupo Comunidad</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/grupocomunidad.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Grupo Comunidad"><i class="bx bx-plus"></i></a>
+                                        <a href="https://grupocomunidad.pe/" target="_blank" rel="noopener" title="Visitar Grupo Comunidad"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/darma.png"%}' class="img-fluid" alt="Darma">
+                                <div class="portfolio-info">
+                                    <h4>Darma</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/darma.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Darma"><i class="bx bx-plus"></i></a>
+                                        <a href="https://darma.pe/" target="_blank" rel="noopener" title="Visitar Darma"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/coneser2gl.png"%}' class="img-fluid" alt="Coneser 2GL">
+                                <div class="portfolio-info">
+                                    <h4>Coneser 2GL</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/coneser2gl.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Coneser 2GL"><i class="bx bx-plus"></i></a>
+                                        <a href="https://coneser2gl.com/" target="_blank" rel="noopener" title="Visitar Coneser 2GL"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/premiumguns.png"%}' class="img-fluid" alt="Premium Guns">
+                                <div class="portfolio-info">
+                                    <h4>Premium Guns</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/premiumguns.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Premium Guns"><i class="bx bx-plus"></i></a>
+                                        <a href="https://premiumguns.com/" target="_blank" rel="noopener" title="Visitar Premium Guns"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/lauramantilla.png"%}' class="img-fluid" alt="Laura Mantilla">
+                                <div class="portfolio-info">
+                                    <h4>Laura Mantilla</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/lauramantilla.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Laura Mantilla"><i class="bx bx-plus"></i></a>
+                                        <a href="https://lauramantilla.com/" target="_blank" rel="noopener" title="Visitar Laura Mantilla"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/gilia.png"%}' class="img-fluid" alt="Gilia">
+                                <div class="portfolio-info">
+                                    <h4>Gilia</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/gilia.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Gilia"><i class="bx bx-plus"></i></a>
+                                        <a href="https://www.gilia.pe/" target="_blank" rel="noopener" title="Visitar Gilia"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafolioweb/santillana.png"%}' class="img-fluid" alt="Santillana Compartir">
+                                <div class="portfolio-info">
+                                    <h4>Santillana Compartir</h4>
+                                    <p>Desarrollo web</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafolioweb/santillana.png"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Santillana Compartir"><i class="bx bx-plus"></i></a>
+                                        <a href="https://www.santillanacompartir.com.pe/" target="_blank" rel="noopener" title="Visitar Santillana Compartir"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafoliomovil/bbva.webp"%}' class="img-fluid" alt="BBVA">
+                                <div class="portfolio-info">
+                                    <h4>BBVA</h4>
+                                    <p>Aplicaci&oacute;n m&oacute;vil</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafoliomovil/bbva.webp"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="BBVA"><i class="bx bx-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafoliomovil/luzdelsur.webp"%}' class="img-fluid" alt="Luz del sur">
+                                <div class="portfolio-info">
+                                    <h4>Luz del sur</h4>
+                                    <p>Aplicaci&oacute;n m&oacute;vil</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafoliomovil/luzdelsur.webp"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Luz del sur"><i class="bx bx-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafoliomovil/distriluz.webp"%}' class="img-fluid" alt="Distriluz">
+                                <div class="portfolio-info">
+                                    <h4>Distriluz</h4>
+                                    <p>Aplicaci&oacute;n m&oacute;vil</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafoliomovil/distriluz.webp"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Distriluz"><i class="bx bx-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src='{% static "images/portafoliomovil/cayetano.webp"%}' class="img-fluid" alt="Universidad Peruana Cayetano Heredia">
+                                <div class="portfolio-info">
+                                    <h4>Universidad Peruana Cayetano Heredia</h4>
+                                    <p>Aplicaci&oacute;n m&oacute;vil</p>
+                                    <div class="portfolio-links">
+                                        <a href='{% static "images/portafoliomovil/cayetano.webp"%}' data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox" title="Universidad Peruana Cayetano Heredia"><i class="bx bx-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Portfolio Section -->
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Servicios</h2>
+                        <p>Soluciones digitales para lanzar, mejorar o automatizar procesos de tu negocio.</p>
+                    </div>
+
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="professional-service">
+                                <i class="bx bx-window-alt"></i>
+                                <h4>Desarrollo web corporativo</h4>
+                                <p>Sitios modernos, r&aacute;pidos y administrables para presentar servicios, captar clientes y fortalecer presencia digital.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="professional-service">
+                                <i class="bx bx-cart-alt"></i>
+                                <h4>Tiendas online</h4>
+                                <p>Ecommerce, cat&aacute;logos y flujos de venta integrados con pagos, formularios, WhatsApp o gestores de contenido.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="professional-service">
+                                <i class="bx bx-mobile-alt"></i>
+                                <h4>Aplicaciones m&oacute;viles</h4>
+                                <p>Apps h&iacute;bridas y nativas para Android/iOS, pensadas para usuarios reales y conectadas a APIs o paneles de gesti&oacute;n.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="professional-service">
+                                <i class="bx bx-bot"></i>
+                                <h4>Automatizaci&oacute;n y bots</h4>
+                                <p>Procesos autom&aacute;ticos, integraciones y asistentes que reducen trabajo manual y mejoran la atenci&oacute;n.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="professional-service">
+                                <i class="bx bx-plug"></i>
+                                <h4>Integraciones con APIs</h4>
+                                <p>Conexi&oacute;n entre sistemas, pasarelas, servicios externos, paneles administrativos y bases de datos.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="professional-service">
+                                <i class="bx bx-compass"></i>
+                                <h4>Consultor&iacute;a tecnol&oacute;gica</h4>
+                                <p>Diagn&oacute;stico, planificaci&oacute;n y acompa&ntilde;amiento para elegir la mejor ruta digital para tu proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Services Section -->
+
+
+            <section id="cta" class="cta-section">
+                <div class="container" data-aos="fade-up">
+                    <div class="cta-content">
+                        <div>
+                            <h2>&iquest;Tienes una idea o proyecto en marcha?</h2>
+                            <p>Conversemos y definamos una soluci&oacute;n clara para tu web, app o automatizaci&oacute;n.</p>
+                        </div>
+                        <a href="https://wa.me/51914751129" target="_blank" rel="noopener" class="cta-button">Hablemos por WhatsApp</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Contact Section ======= -->
+            <!-- <section id="contact" class="contact">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Contact</h2>
+                    </div>
+
+                    <div class="row mt-1">
+
+                        <div class="col-lg-4">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h4>Location:</h4>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="bi bi-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>info@example.com</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="bi bi-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+1 5589 55488 55s</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8 mt-5 mt-lg-0">
+
+                            <form action='{% static "forms/contact.php"%}' method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Benigno Ranilla</h3>
+            <p>WhatsApp: <a href="https://wa.me/51914751129" target="_blank" rel="noopener">+51 914 751 129</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/benignoranilla/" target="_blank" rel="noopener" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/BenignoRF" target="_blank" rel="noopener" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://wa.me/51914751129" target="_blank" rel="noopener" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+            <!-- <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div> -->
+            <div class="copyright">
+                &copy; Copyright <strong><span>Benigno Ranilla</span></strong>. Todos los derechos reservados
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: [license-url] -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+                Desarrollado con Python y Django</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src='{% static "vendor/purecounter/purecounter_vanilla.js"%}'></script>
+    <script src='{% static "vendor/aos/aos.js"%}'></script>
+    <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}'></script>
+    <script src='{% static "vendor/glightbox/js/glightbox.min.js"%}'></script>
+    <script src='{% static "vendor/isotope-layout/isotope.pkgd.min.js"%}'></script>
+    <script src='{% static "vendor/swiper/swiper-bundle.min.js"%}'></script>
+    <script src='{% static "vendor/typed.js/typed.umd.js"%}'></script>
+    <script src='{% static "vendor/waypoints/noframework.waypoints.js"%}'></script>
+    <script src='{% static "vendor/php-email-form/validate.js"%}'></script>
+
+    <!-- Template Main JS File -->
+    <script src='{% static "js/main.js"%}'></script>
+
+</body>
+
+</html>
