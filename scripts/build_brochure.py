@@ -13,7 +13,7 @@ from reportlab.lib.styles import ParagraphStyle
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / 'brochures/gallos-finos-peru/contenido.json').read_text(encoding='utf-8'))
 PDF_NAME = 'benigno-ranilla-sistemas-gallos-finos-peru.pdf'
-OUT = ROOT / 'output/pdf' / PDF_NAME
+OUT = ROOT / 'output/pdf/revision-2' / PDF_NAME
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 cards = ''.join(f'''<article class="service"><span class="number">{s['number']}</span><h3>{e(s['title'])}</h3><p>{e(s['benefit'])}</p><ul>{''.join(f'<li>{e(i)}</li>' for i in s['items'])}</ul><div class="example"><strong>Así se vería en tu negocio</strong><p>{e(s['example'])}</p></div></article>''' for s in data['services'])
@@ -75,7 +75,7 @@ para('Ventas  /  Almacén  /  Eventos  /  Documentos',44,719,505,11,navy,bold=Tr
 para('Benigno Ranilla · Perú · Octubre 2026',44,750,505,10,muted)
 c.showPage()
 
-for page, services, label in [(2,data['services'][:2],'Ventas y existencias'),(3,data['services'][2:4],'Control económico y documental'),(4,data['services'][4:6],'Restaurantes, eventos y comunidad'),(5,data['services'][6:8],'Personas, procesos y sistemas a medida')]:
+for page, services, label in [(2,data['services'][:2],'Ventas y existencias'),(3,data['services'][2:4],'Control económico y documental'),(4,data['services'][4:6],'Restaurantes y sistemas a medida')]:
     base(page,label)
     top=161
     for s in services:
@@ -91,7 +91,7 @@ for page, services, label in [(2,data['services'][:2],'Ventas y existencias'),(3
         top=493
     c.showPage()
 
-base(6,'Una primera etapa con entregables claros')
+base(5,'Una primera etapa con entregables claros')
 para('Construyamos lo que<br/>tu negocio necesita.',42,160,510,31,navy,38,True)
 top=267
 for i,s in enumerate(data['delivery'],1):

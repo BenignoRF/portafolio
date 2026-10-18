@@ -5,20 +5,90 @@
   "client": "Propuesta de servicios para Gallos Finos Perú",
   "context": "Desarrollamos la web de Gallos Finos Perú. Ahora podemos acompañarte en la gestión interna de tus negocios: conectar ventas, existencias, ingresos, gastos y documentos, aprovechando lo que ya hemos construido contigo.",
   "services": [
-    {"number": "01", "title": "Ventas y caja", "benefit": "Conoce cuánto vendes, cómo te pagan y qué queda por cobrar.", "items": ["Registro de ventas de productos, servicios y entradas por negocio.", "Apertura y cierre de caja, medios de pago y cuentas por cobrar.", "Reportes por fecha, local o responsable; comprobantes e integraciones según alcance."], "example": "Al cerrar la jornada, consulta las ventas del restaurante y la taquilla del evento con sus respectivos cierres de caja."},
-    {"number": "02", "title": "Almacén e inventario", "benefit": "Controla tus existencias y planifica mejor las compras.", "items": ["Entradas, salidas, ajustes y transferencias entre almacenes.", "Stock mínimo, historial de movimientos y seguimiento de insumos.", "Compras, proveedores y conexión con ventas para actualizar existencias."], "example": "Revisa las bebidas y los insumos disponibles antes de un evento y prepara la reposición según el stock registrado."},
-    {"number": "03", "title": "Ingresos y gastos por evento", "benefit": "Consulta el resultado de cada evento con sus movimientos ordenados.", "items": ["Ingresos por entradas, reservas, consumo y auspicios.", "Gastos de personal, alquiler, logística y proveedores, con sustento.", "Presupuesto frente a gasto real, rendiciones y balance por evento."], "example": "Al terminar una jornada gallística, compara sus ingresos y gastos registrados para conocer el saldo del evento."},
-    {"number": "04", "title": "Control documental", "benefit": "Encuentra tus documentos y sigue sus pendientes desde un solo lugar.", "items": ["Archivo de contratos, facturas, recibos y documentos de proveedores.", "Búsqueda por negocio, evento, fecha o responsable.", "Permisos de acceso, versiones, aprobaciones y alertas de vencimiento."], "example": "Abre un evento y encuentra los contratos, comprobantes y rendiciones asociados, sin buscar en varias conversaciones."},
-    {"number": "05", "title": "Gestión de restaurantes", "benefit": "Coordina la atención en sala, cocina y caja.", "items": ["Mesas, reservas, pedidos y comandas con seguimiento de estado.", "Carta digital, pedidos por WhatsApp e integración con ventas.", "Consumo de insumos y costos por receta según la configuración acordada."], "example": "El personal registra un pedido, cocina consulta la comanda y caja cobra la cuenta con el detalle del consumo."},
-    {"number": "06", "title": "Entradas, socios y clientes", "benefit": "Organiza el acceso a tus eventos y la relación con tu comunidad.", "items": ["Inscripciones, reservas, entradas digitales y validación QR.", "Base de clientes y socios, suscripciones y seguimiento de renovaciones.", "Conexión con tu web, contenido exclusivo y avisos por canales acordados."], "example": "Consulta quién reservó, valida su entrada y mantén su historial de participación y suscripción."},
-    {"number": "07", "title": "Personal y operación", "benefit": "Asigna responsabilidades y da seguimiento al trabajo diario.", "items": ["Turnos, asistencia y asignación de personal por local o evento.", "Tareas, listas de verificación e incidencias de la operación.", "Accesos por rol e historial de acciones de cada responsable."], "example": "Antes de abrir el evento, verifica las tareas de caja, ingreso y atención, con un responsable para cada actividad."},
-    {"number": "08", "title": "Sistemas a medida", "benefit": "Conecta tus herramientas y resuelve procesos propios de tu negocio.", "items": ["Panel de indicadores de ventas, inventario y resultados por negocio.", "Automatizaciones, aplicaciones móviles e integración entre sistemas.", "Para apuestas: evaluación de integraciones con operadores autorizados y trazabilidad, con alcance previamente definido."], "example": "Si un proceso no encaja en los módulos disponibles, lo analizamos contigo y proponemos una solución específica."}
+    {
+      "number": "01",
+      "title": "Ventas y caja",
+      "benefit": "Conoce cuánto vendes, cómo te pagan y qué queda por cobrar.",
+      "items": [
+        "Registro de ventas de productos, servicios y entradas por negocio.",
+        "Apertura y cierre de caja, medios de pago y cuentas por cobrar.",
+        "Reportes por fecha, local o responsable; comprobantes e integraciones según alcance."
+      ],
+      "example": "Al cerrar la jornada, consulta las ventas del restaurante y la taquilla del evento con sus respectivos cierres de caja."
+    },
+    {
+      "number": "02",
+      "title": "Almacén e inventario",
+      "benefit": "Controla tus existencias y planifica mejor las compras.",
+      "items": [
+        "Entradas, salidas, ajustes y transferencias entre almacenes.",
+        "Stock mínimo, historial de movimientos y seguimiento de insumos.",
+        "Compras, proveedores y conexión con ventas para actualizar existencias."
+      ],
+      "example": "Revisa las bebidas y los insumos disponibles antes de un evento y prepara la reposición según el stock registrado."
+    },
+    {
+      "number": "03",
+      "title": "Ingresos y gastos por evento",
+      "benefit": "Consulta el resultado de cada evento con sus movimientos ordenados.",
+      "items": [
+        "Ingresos por entradas, reservas, consumo y auspicios.",
+        "Gastos de personal, alquiler, logística y proveedores, con sustento.",
+        "Presupuesto frente a gasto real, rendiciones y balance por evento."
+      ],
+      "example": "Al terminar una jornada gallística, compara sus ingresos y gastos registrados para conocer el saldo del evento."
+    },
+    {
+      "number": "04",
+      "title": "Control documental",
+      "benefit": "Encuentra tus documentos y sigue sus pendientes desde un solo lugar.",
+      "items": [
+        "Archivo de contratos, facturas, recibos y documentos de proveedores.",
+        "Búsqueda por negocio, evento, fecha o responsable.",
+        "Permisos de acceso, versiones, aprobaciones y alertas de vencimiento."
+      ],
+      "example": "Abre un evento y encuentra los contratos, comprobantes y rendiciones asociados, sin buscar en varias conversaciones."
+    },
+    {
+      "number": "05",
+      "title": "Gestión de restaurantes",
+      "benefit": "Coordina la atención en sala, cocina y caja.",
+      "items": [
+        "Mesas, reservas, pedidos y comandas con seguimiento de estado.",
+        "Carta digital, pedidos por WhatsApp e integración con ventas.",
+        "Consumo de insumos y costos por receta según la configuración acordada."
+      ],
+      "example": "El personal registra un pedido, cocina consulta la comanda y caja cobra la cuenta con el detalle del consumo."
+    },
+    {
+      "number": "06",
+      "title": "Sistemas a medida",
+      "benefit": "Conecta tus herramientas y resuelve procesos propios de tu negocio.",
+      "items": [
+        "Panel de indicadores de ventas, inventario y resultados por negocio.",
+        "Automatizaciones, aplicaciones móviles e integración entre sistemas.",
+        "Para apuestas: evaluación de integraciones con operadores autorizados y trazabilidad, con alcance previamente definido."
+      ],
+      "example": "Si un proceso no encaja en los módulos disponibles, lo analizamos contigo y proponemos una solución específica."
+    }
   ],
   "delivery": [
-    {"title": "Entender tu operación", "text": "Revisamos cómo vendes, compras y controlas tus eventos. Priorizamos el proceso que más necesitas ordenar."},
-    {"title": "Elegir y adaptar", "text": "Evaluamos nuestros sistemas disponibles y definimos las adaptaciones o desarrollos que tu negocio requiere."},
-    {"title": "Implementar y conectar", "text": "Configuramos la solución acordada, los accesos y las integraciones. Validamos los procesos con tu equipo."},
-    {"title": "Poner en marcha", "text": "Acompañamos las pruebas, la carga inicial de datos y la capacitación. Definimos el soporte que necesitas."}
+    {
+      "title": "Entender tu operación",
+      "text": "Revisamos cómo vendes, compras y controlas tus eventos. Priorizamos el proceso que más necesitas ordenar."
+    },
+    {
+      "title": "Elegir y adaptar",
+      "text": "Evaluamos nuestros sistemas disponibles y definimos las adaptaciones o desarrollos que tu negocio requiere."
+    },
+    {
+      "title": "Implementar y conectar",
+      "text": "Configuramos la solución acordada, los accesos y las integraciones. Validamos los procesos con tu equipo."
+    },
+    {
+      "title": "Poner en marcha",
+      "text": "Acompañamos las pruebas, la carga inicial de datos y la capacitación. Definimos el soporte que necesitas."
+    }
   ],
   "scope": "Contamos con sistemas de ventas, almacén, control de gastos y control documental. Las funciones descritas son opciones de implementación y adaptación para este cliente; su disponibilidad se valida al definir el alcance. Plazos, inversión, licencias, alojamiento, migración de datos, integraciones y soporte se detallan en la propuesta técnica.",
   "start": "Podemos empezar por ventas y almacén, por el control de ingresos y gastos de tus eventos o por ordenar tus documentos. Elegimos contigo una primera etapa y conectamos los demás procesos según tus prioridades.",
