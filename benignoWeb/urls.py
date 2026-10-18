@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from benignoWeb.views import home
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', home, name='home'),
+    path('brochure-gallos-finos-peru.html', TemplateView.as_view(template_name='brochure-gallos-finos-peru.html'), name='brochure_gallos_finos'),
 ]

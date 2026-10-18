@@ -3057,3 +3057,14 @@ section.about.facts .row {
     font-size: 30px !important;
   }
 }
+
+/* Client brochure */
+.brochure-section{padding:56px 0;background:#eef5fb}
+.brochure-preview{display:flex;justify-content:space-between;align-items:center;gap:36px;padding:38px;border:1px solid #dbe5ef;border-radius:14px;background:#fff}
+.brochure-preview h2{font-size:34px;color:#102c48;margin:12px 0}
+.brochure-preview p{max-width:680px;color:#52677a;margin:0}
+.brochure-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
+.brochure-actions a{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px}
+.brochure-actions .btn-primary{background:#0563bb;color:#fff}
+.brochure-actions .btn-secondary{border:1px solid #0563bb;color:#0563bb;background:#fff}
+@media(max-width:991px){.brochure-preview{flex-direction:column;align-items:flex-start;padding:25px}.brochure-preview h2{font-size:29px}}
