@@ -12,7 +12,7 @@ from reportlab.lib.styles import ParagraphStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / 'brochures/gallos-finos-peru/contenido.json').read_text(encoding='utf-8'))
-PDF_NAME = 'benigno-ranilla-brochure-gallos-finos-peru.pdf'
+PDF_NAME = 'benigno-ranilla-sistemas-gallos-finos-peru.pdf'
 OUT = ROOT / 'output/pdf' / PDF_NAME
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
@@ -21,16 +21,16 @@ steps = ''.join(f'<li><span>0{i}</span><div><h3>{e(s["title"])}</h3><p>{e(s["tex
 html = f'''<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Brochure para Gallos Finos Perú | Benigno Ranilla</title>
-<meta name="description" content="Propuesta de desarrollo web, reservas, carta digital, suscripciones e integraciones para Gallos Finos Perú. Servicios de Benigno Ranilla.">
+<meta name="description" content="Sistemas de ventas, almacén, ingresos y gastos por evento, control documental y desarrollo a medida para Gallos Finos Perú.">
 <link rel="icon" href="static/images/brand-favicon.png"><link rel="stylesheet" href="static/css/brochure.css"></head>
 <body><header><a class="brand" href="index.html"><img src="static/images/brand-logo.png" alt="Logo de Benigno Ranilla"><span>Benigno Ranilla<small>Arquitecto de aplicaciones</small></span></a><a class="back" href="index.html#brochure">Volver al portafolio ↗</a></header>
 <main><section class="cover"><div class="cover-copy"><p class="eyebrow">BROCHURE DE SERVICIOS / 2026</p><p class="client">{e(data['client'])}</p><h1>Tu negocio,<br><em>conectado.</em></h1><h2>{e(data['subtitle'])}</h2><p>{e(data['intro'])}</p><div class="actions"><a class="button" href="static/brochures/{PDF_NAME}" download>Descargar brochure PDF ↓</a><a class="text-link" href="{data['contact']}" target="_blank" rel="noopener">Conversemos ↗</a></div></div>
-<aside class="map" aria-label="Áreas que se pueden conectar"><p class="eyebrow">UN ECOSISTEMA PARA TU NEGOCIO</p><div class="map-center">Tu marca<small>Una experiencia conectada</small></div><div class="map-grid"><div><b>01</b> Eventos<span>Programa · Reservas · Acceso</span></div><div><b>02</b> Restaurante<span>Carta · Mesas · Pedidos</span></div><div><b>03</b> Comunidad<span>Perfiles · Videos · Socios</span></div><div><b>04</b> Gestión<span>Roles · Integraciones · Reportes</span></div></div><p class="map-note">Módulos propuestos. Se implementan por etapas según tus prioridades.</p></aside></section>
-<section class="context"><span class="eyebrow">EL PUNTO DE PARTIDA</span><h2>Tu presencia digital puede trabajar más para ti.</h2><p>{e(data['context'])}</p><a href="https://gallosfinosperu.com/" target="_blank" rel="noopener">Web de referencia: Gallos Finos Perú ↗</a></section>
-<section class="solutions" id="soluciones"><div class="section-heading"><p class="eyebrow">LO QUE PUEDO DESARROLLAR PARA TI</p><h2>Cuatro frentes.<br>Una operación mejor conectada.</h2></div><div class="service-grid">{cards}</div></section>
+<aside class="map" aria-label="Áreas que se pueden conectar"><p class="eyebrow">SISTEMAS PARA TU OPERACIÓN</p><div class="map-center">Tus negocios<small>Información para tomar decisiones</small></div><div class="map-grid"><div><b>01</b> Ventas<span>Caja · Cobros · Clientes</span></div><div><b>02</b> Almacén<span>Stock · Compras · Insumos</span></div><div><b>03</b> Eventos<span>Ingresos · Gastos · Balance</span></div><div><b>04</b> Documentos<span>Archivo · Permisos · Vencimientos</span></div></div><p class="map-note">Sistemas disponibles, adaptaciones y desarrollo a medida según tus prioridades.</p></aside></section>
+<section class="context"><span class="eyebrow">EL PUNTO DE PARTIDA</span><h2>Tu web fue el primer paso. Sigamos con tus sistemas.</h2><p>{e(data['context'])}</p><a href="https://gallosfinosperu.com/" target="_blank" rel="noopener">Web desarrollada por nosotros: Gallos Finos Perú ↗</a></section>
+<section class="solutions" id="soluciones"><div class="section-heading"><p class="eyebrow">SISTEMAS QUE PODEMOS IMPLEMENTAR CONTIGO</p><h2>De la venta al control.<br>Soluciones para toda tu operación.</h2></div><div class="service-grid">{cards}</div></section>
 <section class="process"><div><p class="eyebrow">DE LA IDEA A LA OPERACIÓN</p><h2>Un proceso claro,<br>contigo en cada etapa.</h2><p>{e(data['start'])}</p><a class="text-link" href="index.html#portfolio">Explora mi experiencia web y móvil ↗</a></div><ol>{steps}</ol></section>
-<section class="closing"><p class="eyebrow">EMPECEMOS POR LO QUE MÁS NECESITAS</p><h2>Tu próxima mejora<br>empieza con una conversación.</h2><p>Cuéntame qué necesitas organizar, vender o automatizar. Definimos una primera etapa con entregables claros.</p><a class="button" href="{data['contact']}" target="_blank" rel="noopener">Escríbeme por WhatsApp ↗</a><p class="phone">+51 914 751 129 · Perú</p></section>
-<p class="scope">{e(data['scope'])}</p></main><footer><span>Benigno Ranilla · Desarrollo web, apps e integraciones</span><span>Preparado para Gallos Finos Perú · Octubre 2026</span></footer></body></html>'''
+<section class="closing"><p class="eyebrow">EMPECEMOS POR LO QUE MÁS NECESITAS</p><h2>Tu próxima mejora<br>empieza con una conversación.</h2><p>Cuéntame qué necesitas organizar, vender o automatizar. Definimos una primera etapa con entregables claros.</p><a class="button" href="{data['contact']}" target="_blank" rel="noopener">Conversemos por WhatsApp ↗</a><p class="phone">+51 914 751 129 · Perú</p></section>
+<p class="scope">{e(data['scope'])}</p></main><footer><span>Benigno Ranilla · Sistemas de gestión y desarrollo a medida</span><span>Preparado para Gallos Finos Perú · Octubre 2026</span></footer></body></html>'''
 (ROOT / 'docs/brochure-gallos-finos-peru.html').write_text(html, encoding='utf-8')
 template = re.sub(r'(href|src)="static/([^"]+)"', lambda m: m[1] + '="{% static \'' + m[2] + '\' %}"', html)
 template = template.replace('href="index.html', 'href="/').replace('href="/#', 'href="/#')
@@ -64,18 +64,18 @@ def base(page, label):
     para(f'{page:02}',523,803,35,9,blue,bold=True)
     para(label.upper(),42,119,500,9,copper,bold=True)
 
-base(1,'Desarrollo web · Aplicaciones · Integraciones')
+base(1,'Sistemas de gestión · Automatización · Integraciones')
 para('Tu negocio,<br/><font color="#0563bb">conectado.</font>',42,163,510,52,navy,56,True)
 para(data['subtitle'],44,304,480,21,navy,28,True)
 para(data['intro'],44,389,478,13,muted,20)
 c.setFillColor(HexColor('#eef5fb')); c.roundRect(42,H-684,511,155,14,fill=1,stroke=0)
 para('PREPARADO PARA GALLOS FINOS PERÚ',62,549,460,9,blue,bold=True)
 para(data['context'],62,580,465,12,ink,19)
-para('Eventos  /  Restaurantes  /  Comunidad  /  Gestión',44,719,505,11,navy,bold=True)
+para('Ventas  /  Almacén  /  Eventos  /  Documentos',44,719,505,11,navy,bold=True)
 para('Benigno Ranilla · Perú · Octubre 2026',44,750,505,10,muted)
 c.showPage()
 
-for page, services, label in [(2,data['services'][:2],'Más facilidad para tus clientes'),(3,data['services'][2:],'Más continuidad y control')]:
+for page, services, label in [(2,data['services'][:2],'Ventas y existencias'),(3,data['services'][2:4],'Control económico y documental'),(4,data['services'][4:6],'Restaurantes, eventos y comunidad'),(5,data['services'][6:8],'Personas, procesos y sistemas a medida')]:
     base(page,label)
     top=161
     for s in services:
@@ -85,13 +85,13 @@ for page, services, label in [(2,data['services'][:2],'Más facilidad para tus c
         for item in s['items']:
             end=para('• '+e(item),94,end+10,438,11,ink,16)
         end=para('<b>Así se vería en tu negocio</b><br/>'+e(s['example']),94,end+16,438,10,muted,15)
-        if end>777:
+        if end>(455 if top==161 else 777):
             raise ValueError(f'Page {page} overflow: {end}')
         if top==161: line(465)
         top=493
     c.showPage()
 
-base(4,'Una primera etapa con entregables claros')
+base(6,'Una primera etapa con entregables claros')
 para('Construyamos lo que<br/>tu negocio necesita.',42,160,510,31,navy,38,True)
 top=267
 for i,s in enumerate(data['delivery'],1):
