@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo usar una plataforma de inventarios | Benigno Ranilla</title>
+  <meta name="description" content="Guía práctica para organizar productos, registrar entradas y salidas, controlar el stock mínimo y revisar tu inventario con un ejemplo paso a paso.">
+  <link rel="icon" href="{% static 'images/brand-favicon.png' %}" type="image/png">
+  <link rel="stylesheet" href="{% static 'css/posts.css' %}">
+</head>
+<body class="post-page">
+  <header class="post-header">
+    <a class="post-brand" href="./" aria-label="Benigno Ranilla, inicio"><img src="{% static 'images/brand-logo.png' %}" alt="" width="64" height="40"><span>Benigno Ranilla<small>Tecnología para tu negocio</small></span></a>
+    <a class="post-back" href="./#posts">← Todos los posts</a>
+  </header>
+  <main class="post-shell">
+    <article>
+      <header class="post-hero">
+        <div class="post-meta"><span class="post-tag">Gestión de negocios</span><span>Guía práctica</span><span>·</span><span>6 min de lectura</span></div>
+        <h1>Tu inventario en orden.<br><em>Tu negocio bajo control.</em></h1>
+        <p class="post-lead">Cómo usar una plataforma de inventarios para saber qué tienes, qué se mueve y cuándo necesitas reponer.</p>
+        <div class="post-byline">Por Benigno Ranilla <span>·</span> <time datetime="2026-11-02">2 de noviembre de 2026</time></div>
+        <div class="inventory-flow" aria-label="Flujo del inventario"><span><b>01</b> Registra productos</span><i aria-hidden="true">→</i><span><b>02</b> Controla movimientos</span><i aria-hidden="true">→</i><span><b>03</b> Decide con datos</span></div>
+      </header>
+      <div class="post-layout">
+        <aside class="post-toc" aria-label="Contenido del artículo">
+          <strong>En esta guía</strong>
+          <nav><a href="#antes-de-empezar">Antes de empezar</a><a href="#productos">01. Tus productos</a><a href="#entradas">02. Las entradas</a><a href="#salidas">03. Las salidas</a><a href="#reposicion">04. Cuándo reponer</a><a href="#reportes">05. Revisa y concilia</a><a href="#ejemplo">Un ejemplo completo</a><a href="#rutina">Tu rutina diaria</a></nav>
+        </aside>
+        <div class="post-prose">
+          <p>Una venta empieza con una pregunta sencilla: <strong>¿tenemos el producto disponible?</strong> Una plataforma de inventarios te ayuda a responderla registrando los productos y los movimientos de tu almacén en un mismo lugar.</p>
+          <p>No basta con cargar una lista inicial. El inventario resulta útil cuando cada recepción, venta, devolución o ajuste queda registrado a tiempo y con una razón clara.</p>
+          <div class="post-note"><strong>Sobre esta guía</strong><p>Explicamos un flujo general, sin referirnos a una marca específica. Los nombres de los menús, las alertas y las integraciones dependen de la plataforma que utilices.</p></div>
+          <section id="antes-de-empezar"><h2>Antes de empezar: ordena tu información</h2><p>Haz un conteo físico inicial y define qué almacenes, categorías y unidades de medida vas a usar. Decide también quién puede registrar movimientos y quién debe aprobar los ajustes, si tu sistema permite asignar permisos.</p><p>Trabaja con una unidad consistente: si compras cajas de 12 unidades y vendes por unidad, configura esa conversión cuando esté disponible o registra las cantidades convertidas. Evita mezclar cajas y unidades en el mismo saldo.</p></section>
+          <section id="productos"><span class="post-step">Paso 01</span><h2>Crea tu catálogo de productos</h2><p>Busca la sección de productos y registra una ficha por artículo. Usa códigos únicos para distinguir productos parecidos; cada talla, color o presentación que controles por separado necesita su propia identificación.</p><ul><li><strong>Nombre y SKU:</strong> una descripción clara y un código interno único.</li><li><strong>Categoría y unidad:</strong> por ejemplo, accesorios y unidades.</li><li><strong>Costo y precio de venta:</strong> campos distintos que conviene mantener actualizados.</li><li><strong>Almacén y stock inicial:</strong> la ubicación y la cantidad contada físicamente.</li><li><strong>Stock mínimo:</strong> una referencia para planificar la reposición.</li></ul><p>Si importas desde una hoja de cálculo, revisa primero los códigos duplicados y prueba con pocos productos antes de cargar todo el catálogo.</p></section>
+          <section id="entradas"><span class="post-step">Paso 02</span><h2>Registra lo que entra al almacén</h2><p>Cuando recibas una compra, verifica la mercancía y registra una entrada con producto, cantidad, fecha, almacén y proveedor. Añade el comprobante o la referencia de compra para poder rastrear el movimiento.</p><p>Registra la cantidad que realmente recibiste. Si pediste 30 unidades y llegaron 28, ingresa 28 y deja constancia de la diferencia. Una orden de compra pendiente no representa mercadería disponible.</p></section>
+          <section id="salidas"><span class="post-step">Paso 03</span><h2>Registra las ventas y otras salidas</h2><p>Al despachar una venta, registra la salida del almacén correspondiente y vincúlala con el pedido o comprobante. También identifica por separado las mermas, el consumo interno y las devoluciones a proveedores.</p><div class="post-note"><strong>Evita descontar dos veces</strong><p>Si tu tienda o punto de venta ya descuenta el stock mediante una integración, comprueba ese movimiento antes de crear una salida manual.</p></div><p>Un traslado entre almacenes debe reducir el origen y aumentar el destino. Una devolución de cliente solo debe volver al stock disponible después de revisar su estado.</p></section>
+          <section id="reposicion"><span class="post-step">Paso 04</span><h2>Define cuándo necesitas reponer</h2><p>Establece un punto de reposición considerando cuánto vendes, cuánto tarda tu proveedor y qué margen necesitas para absorber variaciones. Revisa los productos cercanos a ese nivel o configura alertas si la plataforma las ofrece.</p><div class="post-formula"><small>Referencia para planificar</small><strong>Punto de reposición = demanda durante el plazo de entrega + stock de seguridad</strong><p>Si vendes 4 unidades al día, tu proveedor tarda 5 días y reservas 10 unidades de seguridad, el punto de reposición es 30 unidades.</p></div><p>Esta referencia debe adaptarse a la estacionalidad, los plazos reales y las compras pendientes. Alcanzar el punto de reposición indica que toca evaluar una compra; no define por sí solo cuántas unidades pedir.</p></section>
+          <section id="reportes"><span class="post-step">Paso 05</span><h2>Revisa los reportes y concilia el stock</h2><p>Consulta las existencias por almacén y el historial de movimientos, a veces llamado kardex. Revisa los productos con mayor salida, los que llevan tiempo sin moverse y los saldos negativos o inesperados.</p><p>Compara periódicamente el sistema con un conteo físico. Si hay diferencias, investiga recepciones, despachos, devoluciones y unidades de medida antes de ajustar. Documenta el motivo, la cantidad y la persona responsable de cualquier corrección.</p></section>
+          <section id="ejemplo"><h2>Del registro a la decisión: un ejemplo</h2><p>Imagina un producto con código <strong>CAM-001</strong>, medido en unidades. Estos son sus movimientos en un solo almacén:</p><div class="post-table-wrap" role="region" aria-label="Ejemplo de movimientos de inventario" tabindex="0"><table class="post-table"><caption>Ejemplo ilustrativo · CAM-001</caption><thead><tr><th scope="col">Movimiento</th><th scope="col">Entrada</th><th scope="col">Salida</th><th scope="col">Saldo</th></tr></thead><tbody><tr><th scope="row">Conteo inicial</th><td>50</td><td>—</td><td>50</td></tr><tr><th scope="row">Compra recibida</th><td>30</td><td>—</td><td>80</td></tr><tr><th scope="row">Venta despachada</th><td>—</td><td>12</td><td>68</td></tr><tr><th scope="row">Devolución apta para venta</th><td>2</td><td>—</td><td>70</td></tr><tr><th scope="row">Merma documentada</th><td>—</td><td>1</td><td><strong>69</strong></td></tr></tbody></table></div><p>El saldo final es <strong>50 + 30 − 12 + 2 − 1 = 69 unidades</strong>. Si el punto de reposición es 30, este saldo todavía está por encima del umbral. Antes de decidir una compra, revisa también las reservas y los pedidos pendientes, si tu sistema los gestiona.</p></section>
+          <section id="rutina"><h2>Una rutina sencilla para mantenerlo al día</h2><ul class="post-checklist"><li>Registra las recepciones y los despachos del día.</li><li>Revisa movimientos pendientes, duplicados y saldos inusuales.</li><li>Consulta qué productos necesitan reposición.</li><li>Programa conteos físicos, empezando por los artículos de mayor movimiento o valor.</li><li>Comprueba quién puede cambiar cantidades y conserva el historial.</li></ul><p>El objetivo es que cada cantidad tenga un origen verificable. Con registros consistentes, podrás atender pedidos con más claridad y planificar tus compras con información útil.</p></section>
+          <div class="post-cta"><span class="post-step">De la idea a tu operación</span><h2>¿Necesitas organizar el inventario de tu negocio?</h2><p>Conversemos sobre tus productos, almacenes y proceso de ventas para definir una solución que encaje con tu forma de trabajar.</p><a class="post-button" href="https://wa.me/51914751129" target="_blank" rel="noopener">Hablemos de tu proyecto ↗</a></div>
+          <a class="post-back" href="./#posts">← Volver a las publicaciones</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="post-footer">Benigno Ranilla · Arquitectura, desarrollo y soluciones digitales.</footer>
+</body>
+</html>
