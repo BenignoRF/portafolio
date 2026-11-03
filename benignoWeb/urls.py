@@ -22,5 +22,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('', home, name='home'),
     path('post-plataforma-inventarios.html', TemplateView.as_view(template_name='post-plataforma-inventarios.html'), name='post_inventarios'),
+    path('brochure-servicios.html', TemplateView.as_view(template_name='brochure-servicios.html'), name='brochure_servicios'),
     path('brochure-gallos-finos-peru.html', TemplateView.as_view(template_name='brochure-gallos-finos-peru.html'), name='brochure_gallos_finos'),
 ]

@@ -1,4 +1,4 @@
-"""Generate the client brochure for GitHub Pages, Django and PDF."""
+"""Generate the general services brochure for GitHub Pages, Django and PDF."""
 import json
 import re
 import shutil
@@ -12,35 +12,37 @@ from reportlab.lib.styles import ParagraphStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / 'brochures/gallos-finos-peru/contenido.json').read_text(encoding='utf-8'))
-PDF_NAME = 'benigno-ranilla-sistemas-gallos-finos-peru.pdf'
-OUT = ROOT / 'output/pdf/revision-2' / PDF_NAME
+PDF_NAME = 'benigno-ranilla-sistemas-de-gestion.pdf'
+OUT = ROOT / 'output/pdf/servicios' / PDF_NAME
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 cards = ''.join(f'''<article class="service"><span class="number">{s['number']}</span><h3>{e(s['title'])}</h3><p>{e(s['benefit'])}</p><ul>{''.join(f'<li>{e(i)}</li>' for i in s['items'])}</ul><div class="example"><strong>Así se vería en tu negocio</strong><p>{e(s['example'])}</p></div></article>''' for s in data['services'])
 steps = ''.join(f'<li><span>0{i}</span><div><h3>{e(s["title"])}</h3><p>{e(s["text"])}</p></div></li>' for i, s in enumerate(data['delivery'], 1))
 html = f'''<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Brochure para Gallos Finos Perú | Benigno Ranilla</title>
-<meta name="description" content="Sistemas de ventas, almacén, ingresos y gastos por evento, control documental y desarrollo a medida para Gallos Finos Perú.">
+<title>Sistemas de gestión y desarrollo a medida | Benigno Ranilla</title>
+<meta name="description" content="Soluciones de ventas, inventario, ingresos y gastos, control documental, restaurantes y desarrollo a medida para tu negocio.">
 <link rel="icon" href="static/images/brand-favicon.png"><link rel="stylesheet" href="static/css/brochure.css"></head>
 <body><header><a class="brand" href="index.html"><img src="static/images/brand-logo.png" alt="Logo de Benigno Ranilla"><span>Benigno Ranilla<small>Arquitecto de aplicaciones</small></span></a><a class="back" href="index.html#brochure">Volver al portafolio ↗</a></header>
 <main><section class="cover"><div class="cover-copy"><p class="eyebrow">BROCHURE DE SERVICIOS / 2026</p><p class="client">{e(data['client'])}</p><h1>Tu negocio,<br><em>conectado.</em></h1><h2>{e(data['subtitle'])}</h2><p>{e(data['intro'])}</p><div class="actions"><a class="button" href="static/brochures/{PDF_NAME}" download>Descargar brochure PDF ↓</a><a class="text-link" href="{data['contact']}" target="_blank" rel="noopener">Conversemos ↗</a></div></div>
-<aside class="map" aria-label="Áreas que se pueden conectar"><p class="eyebrow">SISTEMAS PARA TU OPERACIÓN</p><div class="map-center">Tus negocios<small>Información para tomar decisiones</small></div><div class="map-grid"><div><b>01</b> Ventas<span>Caja · Cobros · Clientes</span></div><div><b>02</b> Almacén<span>Stock · Compras · Insumos</span></div><div><b>03</b> Eventos<span>Ingresos · Gastos · Balance</span></div><div><b>04</b> Documentos<span>Archivo · Permisos · Vencimientos</span></div></div><p class="map-note">Sistemas disponibles, adaptaciones y desarrollo a medida según tus prioridades.</p></aside></section>
-<section class="context"><span class="eyebrow">EL PUNTO DE PARTIDA</span><h2>Tu web fue el primer paso. Sigamos con tus sistemas.</h2><p>{e(data['context'])}</p><a href="https://gallosfinosperu.com/" target="_blank" rel="noopener">Web desarrollada por nosotros: Gallos Finos Perú ↗</a></section>
+<aside class="map" aria-label="Áreas que se pueden conectar"><p class="eyebrow">SISTEMAS PARA TU OPERACIÓN</p><div class="map-center">Tus negocios<small>Información para tomar decisiones</small></div><div class="map-grid"><div><b>01</b> Ventas<span>Caja · Cobros · Clientes</span></div><div><b>02</b> Almacén<span>Stock · Compras · Insumos</span></div><div><b>03</b> Finanzas<span>Ingresos · Gastos · Balance</span></div><div><b>04</b> Documentos<span>Archivo · Permisos · Vencimientos</span></div></div><p class="map-note">Sistemas disponibles, adaptaciones y desarrollo a medida según tus prioridades.</p></aside></section>
+<section class="context"><span class="eyebrow">EL PUNTO DE PARTIDA</span><h2>La tecnología al servicio de tu operación.</h2><p>{e(data['context'])}</p><a href="index.html#portfolio">Conoce nuestros proyectos web y móviles ↗</a></section>
 <section class="solutions" id="soluciones"><div class="section-heading"><p class="eyebrow">SISTEMAS QUE PODEMOS IMPLEMENTAR CONTIGO</p><h2>De la venta al control.<br>Soluciones para toda tu operación.</h2></div><div class="service-grid">{cards}</div></section>
 <section class="process"><div><p class="eyebrow">DE LA IDEA A LA OPERACIÓN</p><h2>Un proceso claro,<br>contigo en cada etapa.</h2><p>{e(data['start'])}</p><a class="text-link" href="index.html#portfolio">Explora mi experiencia web y móvil ↗</a></div><ol>{steps}</ol></section>
 <section class="closing"><p class="eyebrow">EMPECEMOS POR LO QUE MÁS NECESITAS</p><h2>Tu próxima mejora<br>empieza con una conversación.</h2><p>Cuéntame qué necesitas organizar, vender o automatizar. Definimos una primera etapa con entregables claros.</p><a class="button" href="{data['contact']}" target="_blank" rel="noopener">Conversemos por WhatsApp ↗</a><p class="phone">+51 914 751 129 · Perú</p></section>
-<p class="scope">{e(data['scope'])}</p></main><footer><span>Benigno Ranilla · Sistemas de gestión y desarrollo a medida</span><span>Preparado para Gallos Finos Perú · Octubre 2026</span></footer></body></html>'''
-(ROOT / 'docs/brochure-gallos-finos-peru.html').write_text(html, encoding='utf-8')
+<p class="scope">{e(data['scope'])}</p></main><footer><span>Benigno Ranilla · Sistemas de gestión y desarrollo a medida</span><span>Soluciones para negocios · Noviembre 2026</span></footer></body></html>'''
+for page_name in ['brochure-servicios.html', 'brochure-gallos-finos-peru.html']:
+    (ROOT / 'docs' / page_name).write_text(html, encoding='utf-8')
 template = re.sub(r'(href|src)="static/([^"]+)"', lambda m: m[1] + '="{% static \'' + m[2] + '\' %}"', html)
 template = template.replace('href="index.html', 'href="/').replace('href="/#', 'href="/#')
-(ROOT / 'benignoWeb/templates/brochure-gallos-finos-peru.html').write_text('{% load static %}\n' + template, encoding='utf-8')
+for page_name in ['brochure-servicios.html', 'brochure-gallos-finos-peru.html']:
+    (ROOT / 'benignoWeb/templates' / page_name).write_text('{% load static %}\n' + template, encoding='utf-8')
 
 # Fixed editorial pages keep the commercial brochure short and readable.
 W, H = 595.28, 841.89
 navy, blue, copper, ink, muted = map(HexColor, ['#102c48', '#0563bb', '#b77b4a', '#20354a', '#52677a'])
 c = canvas.Canvas(str(OUT), pagesize=(W, H))
-c.setTitle('Propuesta de servicios para Gallos Finos Perú | Benigno Ranilla')
+c.setTitle('Sistemas de gestión y desarrollo a medida | Benigno Ranilla')
 c.setAuthor('Benigno Ranilla')
 
 def para(text, x, top, width, size=11, color=ink, leading=None, bold=False):
@@ -60,7 +62,7 @@ def base(page, label):
     para('Arquitecto de aplicaciones',126,61,260,9,muted)
     line(96)
     line(788)
-    para('GALLOS FINOS PERÚ / PROPUESTA DE SERVICIOS',42,803,430,8,muted)
+    para('BENIGNO RANILLA / SISTEMAS DE GESTIÓN',42,803,430,8,muted)
     para(f'{page:02}',523,803,35,9,blue,bold=True)
     para(label.upper(),42,119,500,9,copper,bold=True)
 
@@ -69,10 +71,10 @@ para('Tu negocio,<br/><font color="#0563bb">conectado.</font>',42,163,510,52,nav
 para(data['subtitle'],44,304,480,21,navy,28,True)
 para(data['intro'],44,389,478,13,muted,20)
 c.setFillColor(HexColor('#eef5fb')); c.roundRect(42,H-684,511,155,14,fill=1,stroke=0)
-para('PREPARADO PARA GALLOS FINOS PERÚ',62,549,460,9,blue,bold=True)
+para('SOLUCIONES DIGITALES PARA TU NEGOCIO',62,549,460,9,blue,bold=True)
 para(data['context'],62,580,465,12,ink,19)
-para('Ventas  /  Almacén  /  Eventos  /  Documentos',44,719,505,11,navy,bold=True)
-para('Benigno Ranilla · Perú · Octubre 2026',44,750,505,10,muted)
+para('Ventas  /  Almacén  /  Finanzas  /  Documentos',44,719,505,11,navy,bold=True)
+para('Benigno Ranilla · Perú · Noviembre 2026',44,750,505,10,muted)
 c.showPage()
 
 for page, services, label in [(2,data['services'][:2],'Ventas y existencias'),(3,data['services'][2:4],'Control económico y documental'),(4,data['services'][4:6],'Restaurantes y sistemas a medida')]:
@@ -109,4 +111,6 @@ for folder in ['docs/static/brochures','benignoWeb/static/brochures']:
     dest=ROOT/folder
     dest.mkdir(parents=True,exist_ok=True)
     shutil.copy2(OUT,dest/PDF_NAME)
+    # Keep previously shared download links current.
+    shutil.copy2(OUT,dest/'benigno-ranilla-sistemas-gallos-finos-peru.pdf')
 print(f'Generated HTML, Django template and PDF: {OUT}')

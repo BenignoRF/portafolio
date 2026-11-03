@@ -1,13 +1,9 @@
-# Brochure para Gallos Finos Perú
+# Brochure general de servicios
 
-Brochure comercial de Benigno Ranilla para este cliente. La fuente editable es `contenido.json` y el generador es `../../scripts/build_brochure.py` (requiere Python y ReportLab).
+La fuente editable es contenido.json y el generador es scripts/build_brochure.py, que requiere Python y ReportLab. El nombre de esta carpeta se conserva por compatibilidad histórica; el contenido vigente es general para distintos tipos de negocio.
 
-Ejecutar desde la raíz del repositorio: `python scripts/build_brochure.py`.
+Ejecutar desde la raíz: python scripts/build_brochure.py.
 
-Salidas: página web en `docs/brochure-gallos-finos-peru.html`, plantilla Django equivalente, PDF en `output/pdf/` y copias descargables en ambos directorios static. La página está enlazada desde la sección Brochure del portafolio.
+Genera brochure-servicios.html para GitHub Pages y Django, además del PDF benigno-ranilla-sistemas-de-gestion.pdf. Las rutas anteriores del HTML y PDF se regeneran con el mismo contenido para conservar enlaces compartidos.
 
-Referencias revisadas el 18 de octubre de 2026: https://gallosfinosperu.com/ y el portafolio de este repositorio. En la página de inicio del cliente se observaron enlaces a En vivo, Criadores, Programa, Admisión y Suscripciones; no se probaron sus procesos internos. Restaurantes y apuestas proceden del contexto proporcionado por el usuario. Los servicios son propuestas y no se atribuyen como implementaciones existentes.
-
-Revisión comercial: el usuario confirma que desarrollamos la web y que contamos con sistemas de ventas, almacén, control de gastos y control documental. El brochure ampliado presenta seis áreas de solución, distingue sistemas disponibles de adaptaciones por validar y genera un PDF de cinco páginas, `benigno-ranilla-sistemas-gallos-finos-peru.pdf`.
-
-Revisión 2: se eliminaron Entradas, socios y clientes y Personal y operación. Sistemas a medida pasa a ser el punto 06. PDF vigente guardado en `output/pdf/revision-2/`; los enlaces públicos conservan su ruta.
+Las funciones descritas son opciones de implementación y adaptación cuyo alcance debe validarse por proyecto. No se presentan como funcionalidades ya implementadas para un cliente.

@@ -1,20 +1,20 @@
 {
   "title": "Tu negocio, conectado.",
-  "subtitle": "Sistemas para vender, controlar y administrar todos tus negocios",
-  "intro": "Contamos con sistemas de ventas, almacén, control de gastos y gestión documental. Podemos adaptarlos a tu operación y desarrollar las herramientas que necesites para tus restaurantes y eventos gallísticos.",
-  "client": "Propuesta de servicios para Gallos Finos Perú",
-  "context": "Desarrollamos la web de Gallos Finos Perú. Ahora podemos acompañarte en la gestión interna de tus negocios: conectar ventas, existencias, ingresos, gastos y documentos, aprovechando lo que ya hemos construido contigo.",
+  "subtitle": "Sistemas para vender, controlar y administrar tu negocio",
+  "intro": "Contamos con sistemas de ventas, almacén, control de gastos y gestión documental. Adaptamos soluciones a tu operación y desarrollamos herramientas para comercios, empresas de servicios, restaurantes y negocios en crecimiento.",
+  "client": "Soluciones digitales para tu negocio",
+  "context": "Cada negocio tiene procesos distintos. Te ayudamos a conectar ventas, existencias, ingresos, gastos y documentos para trabajar con información ordenada y reducir tareas manuales, tanto si empiezas a digitalizarte como si ya utilizas otras herramientas.",
   "services": [
     {
       "number": "01",
       "title": "Ventas y caja",
       "benefit": "Conoce cuánto vendes, cómo te pagan y qué queda por cobrar.",
       "items": [
-        "Registro de ventas de productos, servicios y entradas por negocio.",
+        "Registro de ventas de productos y servicios por negocio o sucursal.",
         "Apertura y cierre de caja, medios de pago y cuentas por cobrar.",
         "Reportes por fecha, local o responsable; comprobantes e integraciones según alcance."
       ],
-      "example": "Al cerrar la jornada, consulta las ventas del restaurante y la taquilla del evento con sus respectivos cierres de caja."
+      "example": "Al cerrar la jornada, consulta las ventas de cada sucursal, los cobros recibidos y los importes pendientes."
     },
     {
       "number": "02",
@@ -25,18 +25,18 @@
         "Stock mínimo, historial de movimientos y seguimiento de insumos.",
         "Compras, proveedores y conexión con ventas para actualizar existencias."
       ],
-      "example": "Revisa las bebidas y los insumos disponibles antes de un evento y prepara la reposición según el stock registrado."
+      "example": "Revisa los productos e insumos disponibles, identifica los que necesitan reposición y prepara tus compras con el stock registrado."
     },
     {
       "number": "03",
-      "title": "Ingresos y gastos por evento",
-      "benefit": "Consulta el resultado de cada evento con sus movimientos ordenados.",
+      "title": "Control de ingresos y gastos",
+      "benefit": "Ordena tus movimientos y consulta el resultado de tu operación.",
       "items": [
-        "Ingresos por entradas, reservas, consumo y auspicios.",
+        "Registro de ingresos por ventas, servicios y otros conceptos.",
         "Gastos de personal, alquiler, logística y proveedores, con sustento.",
-        "Presupuesto frente a gasto real, rendiciones y balance por evento."
+        "Presupuesto frente a gasto real, rendiciones y resultados por período, sucursal o proyecto."
       ],
-      "example": "Al terminar una jornada gallística, compara sus ingresos y gastos registrados para conocer el saldo del evento."
+      "example": "Compara los ingresos y gastos registrados de una sucursal o proyecto para conocer su saldo y revisar las principales partidas."
     },
     {
       "number": "04",
@@ -44,10 +44,10 @@
       "benefit": "Encuentra tus documentos y sigue sus pendientes desde un solo lugar.",
       "items": [
         "Archivo de contratos, facturas, recibos y documentos de proveedores.",
-        "Búsqueda por negocio, evento, fecha o responsable.",
+        "Búsqueda por negocio, proyecto, fecha o responsable.",
         "Permisos de acceso, versiones, aprobaciones y alertas de vencimiento."
       ],
-      "example": "Abre un evento y encuentra los contratos, comprobantes y rendiciones asociados, sin buscar en varias conversaciones."
+      "example": "Abre un proyecto o expediente y encuentra los contratos, comprobantes y rendiciones asociados en un solo lugar."
     },
     {
       "number": "05",
@@ -67,7 +67,7 @@
       "items": [
         "Panel de indicadores de ventas, inventario y resultados por negocio.",
         "Automatizaciones, aplicaciones móviles e integración entre sistemas.",
-        "Para apuestas: evaluación de integraciones con operadores autorizados y trazabilidad, con alcance previamente definido."
+        "Formularios, flujos de aprobación y herramientas internas adaptadas a tu equipo."
       ],
       "example": "Si un proceso no encaja en los módulos disponibles, lo analizamos contigo y proponemos una solución específica."
     }
@@ -75,7 +75,7 @@
   "delivery": [
     {
       "title": "Entender tu operación",
-      "text": "Revisamos cómo vendes, compras y controlas tus eventos. Priorizamos el proceso que más necesitas ordenar."
+      "text": "Revisamos cómo vendes, compras y administras tu negocio. Priorizamos el proceso que más necesitas ordenar."
     },
     {
       "title": "Elegir y adaptar",
@@ -90,7 +90,7 @@
       "text": "Acompañamos las pruebas, la carga inicial de datos y la capacitación. Definimos el soporte que necesitas."
     }
   ],
-  "scope": "Contamos con sistemas de ventas, almacén, control de gastos y control documental. Las funciones descritas son opciones de implementación y adaptación para este cliente; su disponibilidad se valida al definir el alcance. Plazos, inversión, licencias, alojamiento, migración de datos, integraciones y soporte se detallan en la propuesta técnica.",
-  "start": "Podemos empezar por ventas y almacén, por el control de ingresos y gastos de tus eventos o por ordenar tus documentos. Elegimos contigo una primera etapa y conectamos los demás procesos según tus prioridades.",
-  "contact": "https://wa.me/51914751129?text=Hola%20Benigno%2C%20quiero%20conversar%20sobre%20la%20propuesta%20para%20Gallos%20Finos%20Per%C3%BA."
+  "scope": "Contamos con sistemas de ventas, almacén, control de gastos y control documental. Las funciones descritas son opciones de implementación y adaptación; su disponibilidad se valida al definir el alcance de cada proyecto. Plazos, inversión, licencias, alojamiento, migración de datos, integraciones y soporte se detallan en la propuesta técnica.",
+  "start": "Podemos empezar por ventas y almacén, por el control de ingresos y gastos o por ordenar tus documentos. Elegimos contigo una primera etapa y conectamos los demás procesos según tus prioridades.",
+  "contact": "https://wa.me/51914751129?text=Hola%20Benigno%2C%20quiero%20conversar%20sobre%20una%20soluci%C3%B3n%20digital%20para%20mi%20negocio."
 }
