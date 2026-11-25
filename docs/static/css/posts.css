@@ -69,3 +69,8 @@
 .post-page a:focus-visible,.posts-section a:focus-visible,.post-table-wrap:focus-visible{outline:3px solid #d49a64;outline-offset:5px}
 @media(max-width:991px){.post-layout{grid-template-columns:1fr;gap:32px}.post-toc{position:static}.post-toc nav{display:flex;flex-direction:row;flex-wrap:wrap;gap:10px 20px}.post-prose{max-width:740px}.post-feature{grid-template-columns:1fr}.post-cover{gap:26px}.inventory-flow{padding:24px;font-size:13px;gap:10px}}
 @media(max-width:575px){.posts-section{padding:56px 0}.post-cover,.post-feature-copy{padding:26px}.post-feature-copy h3{font-size:24px}.post-header{padding:18px 20px;align-items:flex-start}.post-header .post-back{font-size:12px}.post-brand{font-size:14px;gap:8px}.post-brand img{width:44px;height:34px}.post-shell{padding:0 20px}.post-hero{padding:40px 0 32px}.post-lead{font-size:18px}.inventory-flow{flex-direction:column;align-items:flex-start;gap:14px}.inventory-flow i{display:none}.post-prose h2{font-size:25px}.post-note,.post-formula,.post-cta{padding:22px}.post-meta{gap:8px;font-size:12px}}
+
+.posts-actions{margin-top:32px;text-align:center}
+.posts-archive{background:#f5f8fc}
+.posts-archive .post-hero{padding-bottom:32px}
+.posts-list{padding-bottom:64px}
