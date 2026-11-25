@@ -74,3 +74,8 @@
 .posts-archive{background:#f5f8fc}
 .posts-archive .post-hero{padding-bottom:32px}
 .posts-list{padding-bottom:64px}
+.posts-archive{font-family:'Open Sans',sans-serif}
+.posts-archive h1,.posts-archive h3{font-family:'Raleway',sans-serif}
+.posts-archive .post-feature-copy h3{font-weight:500}
+.posts-archive .post-feature-copy h3 a{text-decoration:none}
+.posts-archive .post-feature-copy p{font-size:16px}
