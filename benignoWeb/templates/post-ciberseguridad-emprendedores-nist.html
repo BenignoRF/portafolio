@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ciberseguridad para emprendedores: por dónde empezar | BenignoRF</title>
+  <meta name="description" content="Una guía para proteger los accesos, actualizar equipos, probar respaldos y preparar una respuesta, basada en recursos oficiales del NIST y con un ejemplo ilustrativo.">
+  <link rel="icon" href="{% static 'images/brand-favicon.png' %}" type="image/png">
+  <link rel="stylesheet" href="{% static 'css/posts.css' %}?v=20261125">
+</head>
+<body class="post-page">
+  <header class="post-header">
+    <a class="post-brand" href="./" aria-label="Benigno Ranilla, inicio"><img src="{% static 'images/brand-logo.png' %}" alt="" width="64" height="40"><span>Benigno Ranilla<small>Tecnología para tu negocio</small></span></a>
+    <a class="post-back" href="posts.html">Todos los posts</a>
+  </header>
+  <main class="post-shell">
+    <article>
+      <header class="post-hero">
+        <div class="post-meta"><span class="post-tag">Ciberseguridad</span><span>Guía práctica</span><span>·</span><span>5 min de lectura</span></div>
+        <h1>Ciberseguridad para emprendedores: <em>¿por dónde empezar?</em></h1>
+        <p class="post-lead">Protege las cuentas y los archivos de los que depende tu trabajo. Cinco acciones para comenzar, un ejemplo ilustrativo y una revisión que puedes repetir.</p>
+        <div class="post-byline">Por Benigno Ranilla <span>·</span><time datetime="2026-11-28">28 de noviembre de 2026</time></div>
+      </header>
+      <div class="post-layout">
+        <aside class="post-toc" aria-label="Índice del artículo"><strong>En esta guía</strong><nav>
+          <a href="#novedad">La guía del NIST</a><a href="#inventario">Identifica lo esencial</a><a href="#accesos">Protege tus accesos</a><a href="#actualizaciones">Actualiza tus herramientas</a><a href="#respaldos">Prueba los respaldos</a><a href="#respuesta">Prepara una respuesta</a><a href="#ejemplo">Ejemplo ilustrativo</a><a href="#revision">Tu primera revisión</a><a href="#fuentes">Fuentes oficiales</a>
+        </nav></aside>
+        <div class="post-prose">
+          <p>Cuando trabajas por tu cuenta, el correo, el celular y los documentos de clientes forman parte de tu operación. Antes de incorporar otra herramienta, conviene saber qué necesitas proteger y cómo comprobar que podrás seguir trabajando si algo falla.</p>
+          <section id="novedad"><span class="post-step">La noticia</span><h2>Una guía pensada para quien trabaja por su cuenta</h2>
+            <p>El 2 de noviembre de 2026, el NIST presentó <em>Small Business Cybersecurity: Non-Employer Firms</em>, una guía dirigida a negocios cuyo único empleado es su propietario. Explica las bases sin asumir conocimientos previos y propone acciones adaptadas a esos negocios. Consulta el <a href="https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you" target="_blank" rel="noopener">anuncio oficial</a>.</p>
+            <p>El documento utiliza el Marco de Ciberseguridad del NIST, CSF 2.0. No cubre todos los riesgos: la estrategia debe ajustarse al sector, los recursos y las obligaciones de cada negocio. Esta guía de BenignoRF resume un punto de partida y añade un ejemplo propio para llevarlo a la práctica.</p>
+          </section>
+          <section id="inventario"><h2>Identifica lo que no puede faltar</h2>
+            <p>El NIST recomienda inventariar los activos y servicios esenciales. Puedes comenzar anotando la herramienta, la información que contiene, quién accede y cómo recuperar la cuenta. Incluye el correo, la web, los dispositivos y el almacenamiento. La <a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.50.pdf" target="_blank" rel="noopener">guía CSWP 50</a> incluye una tabla para iniciar ese inventario.</p>
+            <p>No guardes contraseñas ni códigos de recuperación en una lista de trabajo compartida. El inventario debe describir la situación; los secretos necesitan un almacenamiento protegido.</p>
+          </section>
+          <section id="accesos"><h2>Protege el acceso antes de conectar más servicios</h2>
+            <p>Activa la autenticación multifactor donde esté disponible, especialmente en las cuentas sensibles. El NIST prioriza las opciones resistentes al phishing. Usa contraseñas únicas, cambia las predeterminadas de los equipos y considera un gestor de contraseñas. También recomienda utilizar cuentas de usuario estándar en lugar de privilegios de administrador cuando sea posible. Revisa sus <a href="https://www.nist.gov/itl/smallbusinesscyber/cybersecurity-basics" target="_blank" rel="noopener">recomendaciones básicas</a>.</p>
+          </section>
+          <section id="actualizaciones"><h2>Revisa las actualizaciones de tus herramientas</h2>
+            <p>Mantener actualizado el software de dispositivos y aplicaciones forma parte de las medidas iniciales del NIST. Haz una lista de las herramientas que utilizas para trabajar y comprueba su estado desde sus opciones oficiales. En tu revisión, anota qué quedó pendiente y quién lo resolverá.</p>
+          </section>
+          <section id="respaldos"><h2>Comprueba que puedes recuperar un archivo</h2>
+            <p>Las recomendaciones oficiales incluyen respaldar los datos, proteger las copias y probarlas. Tener un archivo sincronizado o ver una notificación de copia completada no demuestra por sí solo que puedas recuperar lo que necesitas. Antes de confiar en un servicio, revisa qué respalda y cómo restaura la información.</p>
+            <p>Para una prueba pequeña, utiliza un documento sin datos reales de clientes. Recupera una copia en otra carpeta, ábrela y verifica que contiene lo esperado. Registra la fecha y el resultado. Esta propuesta de prueba es ilustrativa: la frecuencia y el alcance dependerán de tu operación.</p>
+          </section>
+          <section id="respuesta"><h2>Deja preparado a quién acudir</h2>
+            <p>El NIST propone conservar una lista de contactos para reportar incidentes, con una copia en papel. Incluye el soporte de los servicios críticos y la ayuda profesional que corresponda. Evita que la única información para recuperar tu operación esté dentro de la misma cuenta que podrías perder.</p>
+          </section>
+          <section id="ejemplo"><span class="post-step">Ejemplo ilustrativo · no es un caso de cliente</span><h2>Una persona que prepara propuestas comerciales</h2>
+            <p>Imagina que Valeria trabaja sola y redacta propuestas desde su computadora. El correo le permite responder a clientes y recuperar otras cuentas. Sus documentos están en un servicio en la nube.</p>
+            <ul>
+              <li><strong>Primera revisión:</strong> Valeria identifica qué cuentas utiliza para recibir solicitudes, preparar propuestas y entregar archivos. Anota cuáles dependen del correo principal.</li>
+              <li><strong>Acceso:</strong> comprueba la protección de ese correo y confirma que dispone de un método de recuperación que puede utilizar.</li>
+              <li><strong>Continuidad:</strong> crea una propuesta ficticia, prueba recuperar una copia y verifica el contenido en una carpeta distinta.</li>
+              <li><strong>Próxima acción:</strong> si la prueba falla, documenta el problema y consulta al proveedor antes de dar por resuelto el respaldo.</li>
+            </ul>
+            <p>El resultado de este ejercicio es una lista de comprobaciones y pendientes. No permite afirmar que todas sus cuentas sean seguras ni que esté preparada para cualquier incidente.</p>
+          </section>
+          <section id="revision"><h2>Convierte la revisión en tareas concretas</h2>
+            <p>En BenignoRF proponemos usar tres datos por tarea: responsable, fecha y evidencia. Por ejemplo: «revisar la recuperación del correo», «probar un documento ficticio» o «confirmar las actualizaciones pendientes». Separa lo comprobado de lo que todavía debes consultar.</p>
+            <div class="post-note"><strong>Una pregunta para comenzar</strong><p>Si mañana no pudieras entrar a tu correo de trabajo, ¿sabrías cómo recuperar el acceso y dónde encontrar tus documentos? Empieza por la dependencia que más afecte a tu operación.</p></div>
+          </section>
+          <section id="fuentes"><h2>Fuentes oficiales para continuar</h2><ul>
+            <li><a href="https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you" target="_blank" rel="noopener">NIST: anuncio de la guía para emprendedores</a>, publicado el 2 de noviembre de 2026.</li>
+            <li><a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.50.pdf" target="_blank" rel="noopener">NIST CSWP 50: Small Business Cybersecurity: Non-Employer Firms</a>, documento completo en inglés.</li>
+            <li><a href="https://www.nist.gov/itl/smallbusinesscyber/cybersecurity-basics" target="_blank" rel="noopener">NIST: Cybersecurity Basics</a>, recomendaciones iniciales.</li>
+          </ul><p>Fuentes consultadas el 28 de noviembre de 2026. El ejemplo y la organización de tareas son propuestas educativas de BenignoRF.</p></section>
+          <div class="post-cta"><span class="post-step">De la idea a tu operación</span><h2>¿Qué herramienta sostiene tu trabajo?</h2><p>Cuéntanos cómo organizas tus cuentas y documentos para revisar las necesidades de tu proyecto digital.</p><a class="post-button" href="https://wa.me/51914751129" target="_blank" rel="noopener">Hablemos de tu proyecto</a></div>
+          <a class="post-back" href="posts.html">Volver a todas las publicaciones</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="post-footer">Benigno Ranilla · Arquitectura, desarrollo y soluciones digitales.</footer>
+</body>
+</html>
